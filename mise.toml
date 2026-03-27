@@ -1,5 +1,6 @@
 [tools]
 aws-cli = { version = "2.34.19", symlink_bins = "true" } # AWS CLIツール
+node = "24.14.1" # JavaScriptランタイム環境
 
 [env]
 _.file = ".env" # 環境変数を定義するファイル
