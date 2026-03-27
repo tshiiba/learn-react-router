@@ -1,0 +1,2 @@
+[tools]
+aws-cli = { version = "2.34.19", symlink_bins = "true" } # AWS CLIツール
