@@ -4,3 +4,7 @@ node = "24.14.1" # JavaScriptランタイム環境
 
 [env]
 _.file = ".env" # 環境変数を定義するファイル
+
+[tasks.admin-dev]
+description = "管理画面（フロントエンド）起動"
+run = "cd web/admin && npm run dev"
