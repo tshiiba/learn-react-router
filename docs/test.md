@@ -1,18 +1,3 @@
-<details>
-  <summary>折り畳み</summary>
-
-  aiueo
-</details>
-
-| TH | TH |
-| ---- | ---- |
-| TD | TD |
-| TD | <details>
-  <summary>折り畳み</summary>
-
-  aiueo
-</details> |
-
 <table>
   <thead>
     <tr>
@@ -64,3 +49,7 @@
     </tr>
   </tbody>
 </table>
+
+## Markdownリンク例
+
+GitHub上で別ファイルのMarkdownへ飛ばす例: [Cognitoメモ](./cognito.md)
