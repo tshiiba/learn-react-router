@@ -6,8 +6,11 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import type { ReactNode } from "react";
 
 import type { Route } from "./+types/root";
+import { AuthProvider } from "~/auth/context/auth-context";
+import "@aws-amplify/ui-react/styles.css";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -23,7 +26,7 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -42,7 +45,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <AuthProvider>
+      <Outlet />
+    </AuthProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

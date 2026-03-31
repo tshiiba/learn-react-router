@@ -34,6 +34,19 @@ npm run dev
 
 Your application will be available at `http://localhost:5173`.
 
+## Mock Authentication
+
+This app starts from `/login` for unauthenticated users.
+
+- `/login` is the only public route
+- `/` and `/hogeA` are protected by a shared layout route
+- Auth state is kept in memory only, so a browser reload signs the user out
+
+Use the current mock credentials:
+
+- Username: `test-user@example.com`
+- Password: `TestPass123!`
+
 ## Building for Production
 
 Create a production build:
